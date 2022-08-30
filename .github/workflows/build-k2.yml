@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com//lede
+  REPO_URL: https://github.com/dyz817/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   DST: mt7620a_phicomm_psg1218a.dts
