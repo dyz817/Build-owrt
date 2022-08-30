@@ -63,10 +63,10 @@ jobs:
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         
-    - name: Load custom dst
-      run: |
-        [ -e $DST ] && mv $DST openwrt/target/linux/ramips/dts/mt7620a_phicomm_psg1218a.dts
-        [ -e $MK ] && mv $MK openwrt/target/linux/ramips/image/mt7620.mk
+   # - name: Load custom dst
+   #   run: |
+   #     [ -e $DST ] && mv $DST openwrt/target/linux/ramips/dts/mt7620a_phicomm_psg1218a.dts
+   #     [ -e $MK ] && mv $MK openwrt/target/linux/ramips/image/mt7620.mk
         
     - name: SSH connection to Actions
       uses: P3TERX/ssh2actions@v1.0.0
